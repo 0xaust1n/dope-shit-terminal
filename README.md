@@ -5,7 +5,7 @@ My terminal config for [Ghostty](https://ghostty.org/) + Oh My Zsh + Starship.
 ## Quick Start
 
 ```bash
-git clone https://github.com/Aust1n/ghostty.git ~/ghostty && cd ~/ghostty && bash setup.sh
+git clone https://github.com/0xaust1n/dope-shit-terminal.git ~/dope-shit-terminal && cd ~/dope-shit-terminal && bash setup.sh
 ```
 
 ## What's Included
