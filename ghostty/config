@@ -44,10 +44,12 @@ clipboard-paste-protection = true
 clipboard-paste-bracketed-safe = true
 
 # --- Working Directory ---
-working-directory = /Users/austin.ty.kuo/Documents
+working-directory = ~/Documents
 
 # --- Shell Integration ---
 shell-integration = detect
+# SSH compatibility for remote hosts that do not recognize xterm-ghostty.
+shell-integration-features = ssh-terminfo,ssh-env
 
 # --- Keybindings ---
 # Tabs

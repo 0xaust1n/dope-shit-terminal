@@ -39,14 +39,26 @@ git clone https://github.com/0xaust1n/dope-shit-terminal.git ~/dope-shit-termina
 ### Zsh Aliases
 
 ```
-c        → clear
-szsh     → source ~/.zshrc
-vs       → open VS Code
-cr       → open Cursor
-pi/pb/pd → pnpm install/build/dev
-cc       → claude (bypass permissions)
-gas      → gh auth switch
+c           → clear
+szsh        → source ~/.zshrc
+ipconfig    → ifconfig en0
+fuckAudio   → sudo killall coreaudiod
+vs          → open VS Code
+cr          → open Cursor
+ag          → open Antigravity
+pi/pb/pd/pu → pnpm install/build/dev/update -i
+yd          → yarn dev
+md          → make d
+cc          → claude (bypass permissions)
+cx          → codex (full access)
+gay         → gemini
+gas         → gh auth switch
 ```
+
+### Secrets
+
+`~/.zshrc` sources `~/.zshrc.local` if it exists. Keep API keys and tokens
+there — it is never committed.
 
 ### Zsh Plugins
 
@@ -56,7 +68,8 @@ gas      → gh auth switch
 
 ### Starship
 
-Minimal config — just disables the blank line before each prompt (`add_newline = false`).
+Minimal config — disables the blank line before each prompt (`add_newline = false`)
+and raises `command_timeout` to 2000ms so git modules don't drop out on large repos.
 
 ## What `setup.sh` Does
 

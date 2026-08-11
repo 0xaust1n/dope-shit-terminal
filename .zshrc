@@ -43,5 +43,19 @@ alias gay="gemini"
 alias cc="claude --permission-mode bypassPermissions"
 alias cx="codex -s danger-full-access -a never" 
 
-# github cli 
+# github cli
 alias gas="gh auth switch"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# machine-local secrets, never committed
+[ -s "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
+eval "$(starship init zsh)"
+
+# zsh-syntax-highlighting must be sourced last
+[ -s /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && \
+  source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
